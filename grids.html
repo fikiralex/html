@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> css grid exploration</title>
+    <style>
+        h1 {
+            color: white;
+            text-indent: 75px;
+        }
+
+        body {
+            background: #000;
+            margin: 0;
+        }
+
+        .outgrid {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 2px;
+            grid-auto-rows: minmax(75px auto);
+        }
+
+        .outgrid>div {
+            background: darkgoldenrod;
+            padding: 10px;
+        }
+
+        .outgrid>div:nth-child(odd) {
+            background: darkcyan
+        }
+     .box01 {
+         grid-column: 1/4;
+     }
+     .box02, .box03, .box04 {
+         grid-row: 2/6;
+     }
+    </style>
+</head>
+
+<body>
+   
+    <div class="outgrid">
+        <div class="box01">  <h1> css grid exploration</h1></div>
+        <div class="box02"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+        <div class="box03"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+        <div class="box04"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+        <div class="box05"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+        <div class="box06"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+        <div class="box07"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+        <div class="box08"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+        <div class="box09"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos incidunt
+            quisquam enim maxime, saepe dolore illo ipsam accusantium eaque ducimus voluptate, mollitia, veritatis
+            officia nulla in odio commodi sed.</div>
+
+
+</body>
+
+</html>
